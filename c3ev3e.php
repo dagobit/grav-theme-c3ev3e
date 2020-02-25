@@ -3,7 +3,6 @@ namespace Grav\Theme;
 
 use Grav\Common\Theme;
 
-class Ceevee extends Theme
+class C3ev3e extends Theme
 {
-
 }
