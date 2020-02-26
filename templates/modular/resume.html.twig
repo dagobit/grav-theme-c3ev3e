@@ -3,6 +3,11 @@
     <div class="row {{ section.css_class }}">
         <div class="col-md-3 header-col">
             <h1><span>{{ section.title }}</span></h1>
+            {% if section.subtitle %}
+            <p>
+              {{ section.subtitle }}
+            </p>
+            {% endif %}
         </div>
         <div class="col-md-9 main-col">
             {% for item in section.items %}
@@ -14,26 +19,40 @@
                     {% if item.info or item.date %}
                     <p class="info">{{ item.info }} <span>&bull;</span> <em class="date">{{ item.date }}</em></p>
                     {% endif %}
+                    
+                    {% if item.description %}
                     <p>
                         {{ item.description }}
                     </p>
+                    {% endif %}
+                    
+                    {% if item.infos %}
+                      <ul class="infos">
+                        {% for info in item.infos %}
+                          <li>{{ info }}</li>
+                        {% endfor %}
+                      </ul>
 
+                    {% endif %}
+                    
                     {% if item.skills %}
                     
-                    <div class="row">
+                    <div class="row" style="margin-bottom: 50px">
                     {% for skill in item.skills %}
                     <div class="col-md-6">
-                      <div class="col-md-4 px-0">
+                      <div class="col-md-12 px-0">
                         <em>{{ skill.name }}</em>
+                        {% if skill.details %}
+                        <small>{{ skill.details }}</small>
+                        {% endif %}
                       </div>
-                      <div class="col-md-8 px-0 progress">
+                      <div class="col-md-12 progress px-0">
                         <div class="progress-bar  bg-dark" role="progressbar" style="width: {{ skill.level }}%" aria-valuenow="{{ skill.level }}" aria-valuemin="0" aria-valuemax="100"></div>
                       </div>
                     </div>
                     {% endfor %}
                   </div>
                     {% endif %}
-
                 </div>
             </div>
             {% endfor %}

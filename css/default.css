@@ -150,10 +150,10 @@ body {
    font-weight: normal;
    font-size: 15px;
    line-height: 30px;
-	color: #838C95;
+  color: #838C95;
 
    -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
-	-webkit-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 /*  2. Typography
@@ -162,7 +162,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
    color: #313131;
-	font-family: 'opensans-bold', sans-serif;
+  font-family: 'opensans-bold', sans-serif;
    font-weight: normal;
 }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
@@ -203,7 +203,7 @@ blockquote:before {
 
    position: absolute;
    top:  30px;
-	left: 0;
+  left: 0;
 }
 blockquote p {
    font-family: 'librebaskerville-italic', serif;
@@ -225,33 +225,33 @@ blockquote cite a:visited { color: #8B9798; border: none }
 /*  Pull Quotes Markup
 /*
     <aside class="pull-quote">
-		<blockquote>
-			<p></p>
-		</blockquote>
-	 </aside>
+    <blockquote>
+      <p></p>
+    </blockquote>
+   </aside>
 /*
 /* --------------------------------------------------------------------- */
 .pull-quote {
    position: relative;
-	padding: 18px 30px 18px 0px;
+  padding: 18px 30px 18px 0px;
 }
 .pull-quote:before,
 .pull-quote:after {
-	height: 1em;
-	opacity: 0.45;
-	position: absolute;
-	font-size: 80px;
+  height: 1em;
+  opacity: 0.45;
+  position: absolute;
+  font-size: 80px;
    font-family: Arial, Sans-Serif;
 }
 .pull-quote:before {
-	content: "\201C";
-	top:  33px;
-	left: 0;
+  content: "\201C";
+  top:  33px;
+  left: 0;
 }
 .pull-quote:after {
-	content: '\201D';
-	bottom: -33px;
-	right: 0;
+  content: '\201D';
+  bottom: -33px;
+  right: 0;
 }
 .pull-quote blockquote {
    margin: 0;
@@ -263,24 +263,24 @@ blockquote cite a:visited { color: #8B9798; border: none }
 /* Abbreviations */
 abbr {
    font-family: 'opensans-bold', sans-serif;
-	font-variant: small-caps;
-	text-transform: lowercase;
+  font-variant: small-caps;
+  text-transform: lowercase;
    letter-spacing: .5px;
-	color: gray;
+  color: gray;
 }
 abbr:hover { cursor: help; }
 
 /* drop cap */
 .drop-cap:first-letter {
-	float: left;
-	margin: 0;
-	padding: 14px 6px 0 0;
-	font-size: 84px;
-	font-family: /* Copperplate */ 'opensans-bold', sans-serif;
+  float: left;
+  margin: 0;
+  padding: 14px 6px 0 0;
+  font-size: 84px;
+  font-family: /* Copperplate */ 'opensans-bold', sans-serif;
    line-height: 60px;
-	text-indent: 0;
-	background: transparent;
-	color: inherit;
+  text-indent: 0;
+  background: transparent;
+  color: inherit;
 }
 
 hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 30px; height: 0; }
@@ -323,8 +323,8 @@ li p { }
 /*  Stats Tab Markup
 
     <ul class="stats-tabs">
-		<li><a href="#">[value]<b>[name]</b></a></li>
-	 </ul>
+    <li><a href="#">[value]<b>[name]</b></a></li>
+   </ul>
 
     Extend this object into your markup.
 /*
@@ -334,20 +334,20 @@ li p { }
    margin: 24px 0;
 }
 .stats-tabs li {
-	display: inline-block;
-	margin: 0 10px 18px 0;
-	padding: 0 10px 0 0;
-	border-right: 1px solid #ccc;
+  display: inline-block;
+  margin: 0 10px 18px 0;
+  padding: 0 10px 0 0;
+  border-right: 1px solid #ccc;
 }
 .stats-tabs li:last-child {
-	margin: 0;
-	padding: 0;
-	border: none;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 .stats-tabs li a {
-	display: inline-block;
-	font-size: 22px;
-	font-family: 'opensans-bold', sans-serif;
+  display: inline-block;
+  font-size: 22px;
+  font-family: 'opensans-bold', sans-serif;
    border: none;
    color: #313131;
 }
@@ -355,10 +355,10 @@ li p { }
    color:#11ABB0;
 }
 .stats-tabs li a b {
-	display: block;
-	margin: 6px 0 0 0;
-	font-size: 13px;
-	font-family: 'opensans-regular', sans-serif;
+  display: block;
+  margin: 6px 0 0 0;
+  font-size: 13px;
+  font-family: 'opensans-regular', sans-serif;
    color: #8B9798;
 }
 
@@ -370,37 +370,37 @@ dd { margin: 0 0 0 20px; }
 /* Lining Definition Style Markup */
 .lining dt,
 .lining dd {
-	display: inline;
-	margin: 0;
+  display: inline;
+  margin: 0;
 }
 .lining dt + dt:before,
 .lining dd + dt:before {
-	content: "\A";
-	white-space: pre;
+  content: "\A";
+  white-space: pre;
 }
 .lining dd + dd:before {
-	content: ", ";
+  content: ", ";
 }
 .lining dd:before {
-	content: ": ";
-	margin-left: -0.2em;
+  content: ": ";
+  margin-left: -0.2em;
 }
 
 /* Dictionary Definition Style Markup */
 .dictionary-style dt {
-	display: inline;
-	counter-reset: definitions;
+  display: inline;
+  counter-reset: definitions;
 }
 .dictionary-style dt + dt:before {
-	content: ", ";
-	margin-left: -0.2em;
+  content: ", ";
+  margin-left: -0.2em;
 }
 .dictionary-style dd {
-	display: block;
-	counter-increment: definitions;
+  display: block;
+  counter-increment: definitions;
 }
 .dictionary-style dd:before {
-	content: counter(definitions, decimal) ". ";
+  content: counter(definitions, decimal) ". ";
 }
 
 /* Pagination */
@@ -419,19 +419,19 @@ dd { margin: 0 0 0 20px; }
    padding: 6px 10px;
    margin-right: 3px;
    margin-bottom: 6px;
-	color: #6E757C;
-	background-color: #E6E8EB;
+  color: #6E757C;
+  background-color: #E6E8EB;
 
-	-webkit-transition: all 200ms ease-in-out;
-	-moz-transition: all 200ms ease-in-out;
-	-o-transition: all 200ms ease-in-out;
-	-ms-transition: all 200ms ease-in-out;
-	transition: all 200ms ease-in-out;
+  -webkit-transition: all 200ms ease-in-out;
+  -moz-transition: all 200ms ease-in-out;
+  -o-transition: all 200ms ease-in-out;
+  -ms-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
 
    -moz-border-radius: 3px;
    -webkit-border-radius: 3px;
    -khtml-border-radius: 3px;
-	border-radius: 3px;
+  border-radius: 3px;
 }
 .pagination .page-numbers:hover {
    background: #838A91;
@@ -445,7 +445,7 @@ dd { margin: 0 0 0 20px; }
 .pagination .inactive,
 .pagination .inactive:hover {
    background-color: #E6E8EB;
-	color: #A9ADB2;
+  color: #A9ADB2;
 }
 .pagination .prev, .pagination .next {}
 
@@ -469,20 +469,20 @@ input[type="button"] {
    font: 16px/30px 'opensans-bold', sans-serif;
    background: #11ABB0;
    display: inline-block;
-	text-decoration: none;
+  text-decoration: none;
    letter-spacing: 0;
    color: #fff;
-	padding: 12px 20px;
-	margin-bottom: 18px;
+  padding: 12px 20px;
+  margin-bottom: 18px;
    border: none;
    cursor: pointer;
    height: auto;
 
    -webkit-transition: all .2s ease-in-out;
-	-moz-transition: all .2s ease-in-out;
-	-o-transition: all .2s ease-in-out;
-	-ms-transition: all .2s ease-in-out;
-	transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
 
    -moz-border-radius: 3px;
    -webkit-border-radius: 3px;
@@ -513,10 +513,10 @@ button.full-width,
 input[type="submit"].full-width,
 input[type="reset"].full-width,
 input[type="button"].full-width {
-	width: 100%;
-	padding-left: 0 !important;
-	padding-right: 0 !important;
-	text-align: center;
+  width: 100%;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center;
 }
 
 /* Fix for odd Mozilla border & padding issues */
@@ -544,11 +544,11 @@ select {
    outline: none;
    vertical-align: middle;
    min-width: 225px;
-	max-width: 100%;
+  max-width: 100%;
    font-size: 15px;
    line-height: 24px;
-	color: #647373;
-	background: #D3D9D9;
+  color: #647373;
+  background: #D3D9D9;
 
 }
 
@@ -561,7 +561,7 @@ input[type="password"]:focus,
 input[type="email"]:focus,
 textarea:focus {
    color: #B3B7BC;
-	background-color: #3d4145;
+  background-color: #3d4145;
 }
 
 textarea { min-height: 220px; }
@@ -569,13 +569,13 @@ textarea { min-height: 220px; }
 label,
 legend {
    font: 16px/24px 'opensans-bold', sans-serif;
-	margin: 12px 0;
+  margin: 12px 0;
    color: #3d4145;
    display: block;
 }
 label span,
 legend span {
-	color: #8B9798;
+  color: #8B9798;
    font: 14px/24px 'opensans-regular', sans-serif;
 }
 
@@ -724,15 +724,15 @@ properly.
 @media only screen and (max-width: 767px) {
 
    .row {
-	   width: 460px;
-	   margin: 0 auto;
+     width: 460px;
+     margin: 0 auto;
       padding: 0;
-	}
+  }
    .column, .columns {
-	   width: auto !important;
-	   float: none;
-	   margin-left: 0;
-	   margin-right: 0;
+     width: auto !important;
+     float: none;
+     margin-left: 0;
+     margin-right: 0;
       padding: 0 30px;
    }
    .row .row { width: auto; max-width: none; margin: 0 -30px; }
@@ -800,7 +800,7 @@ properly.
 .pull-left    { float: left !important; }
 .pull-right   { float: right !important; }
 .align-center {
-	margin-left: auto !important;
-	margin-right: auto !important;
-	text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  text-align: center !important;
 }

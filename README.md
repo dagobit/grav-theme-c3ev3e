@@ -2,7 +2,12 @@
 
 ![Ceevee](assets/readme_1.png)
 
-[Ceevee](http://www.styleshout.com/free-templates/ceevee/) is a clean, modern, fully responsive site template for your resume and portfolio. With this template, you can easily introduce yourself and showcase your works to future clients and employers. Also, it is flexible and easy to customize so you even use this template as a creative, business or portfolio site for your company.
+dagobit ported the Template to Bootstrap Grid and enhanced the skills section to a two column view.
+For the Work Section we added the support of unsorted lists embedded as infos tree node in the yaml.
+We also added a "blank" Layout for serving additional pages due law reasons like data privacy or imprint.
+We hope you enjoy the work and refer in the rest to the original README content.
+
+Based on the original [Ceevee](http://www.styleshout.com/free-templates/ceevee/) which is a clean, modern, fully responsive site template for your resume and portfolio. With this template, you can easily introduce yourself and showcase your works to future clients and employers. Also, it is flexible and easy to customize so you even use this template as a creative, business or portfolio site for your company.
 
 # Features:
 
@@ -18,6 +23,13 @@
 * Smooth scrolling effect
 * Cross browser compatible
 * Twitter integration
+
+# Features New:
+* Boostrap CSS 4 Grid
+* Blank layout for privacy or imprint pages
+* Two Column Skills Section with bootsrap progress bar
+* Added infos tree node for past work
+* Fixed some vars in the template only writing surrounding tag if var is really given
 
 # Installation
 
