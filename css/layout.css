@@ -178,7 +178,8 @@ ul#nav li a {
 }
 
 ul#nav li a:active { background-color: transparent !important; }
-ul#nav li.current a { color: #F06000; }
+ul#nav li.current a { color: #0060F0; }
+/* ul#nav li.current a { color: #F06000; } */
 
 
 /* ------------------------------------------------------------------ */
@@ -1004,7 +1005,8 @@ footer .social-links li {
     margin: 0;
     padding: 0;
     margin-left: 42px;
-    color: #F06000;
+    /* color: #F06000; */
+    color: #0B1B3D;
 }
 
 footer .social-links li:first-child { margin-left: 0; }

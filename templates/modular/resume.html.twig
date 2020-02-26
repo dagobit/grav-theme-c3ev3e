@@ -1,13 +1,13 @@
 <section id="resume">
     {% for section in page.header.sections %}
     <div class="row {{ section.css_class }}">
-        <div class="three columns header-col">
+        <div class="col-md-3 header-col">
             <h1><span>{{ section.title }}</span></h1>
         </div>
-        <div class="nine columns main-col">
+        <div class="col-md-9 main-col">
             {% for item in section.items %}
             <div class="row item">
-                <div class="twelve columns">
+                <div class="col-md-12">
                     {% if item.title %}
                     <h3>{{ item.title }}</h3>
                     {% endif %}
@@ -19,13 +19,19 @@
                     </p>
 
                     {% if item.skills %}
-                    <div class="bars">
-                        <ul class="skills">
-                            {% for skill in item.skills %}
-                            <li><span class="bar-expand" style="width: {{ skill.level }}%;animation: {{ skill.name|lower }} 2s ease;"></span><em>{{ skill.name }}</em></li>
-                            {% endfor %}
-                        </ul>
+                    
+                    <div class="row">
+                    {% for skill in item.skills %}
+                    <div class="col-md-6">
+                      <div class="col-md-4 px-0">
+                        <em>{{ skill.name }}</em>
+                      </div>
+                      <div class="col-md-8 px-0 progress">
+                        <div class="progress-bar  bg-dark" role="progressbar" style="width: {{ skill.level }}%" aria-valuenow="{{ skill.level }}" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
                     </div>
+                    {% endfor %}
+                  </div>
                     {% endif %}
 
                 </div>

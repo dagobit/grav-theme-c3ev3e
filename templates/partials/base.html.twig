@@ -12,6 +12,7 @@
         <link rel="icon" type="image/png" href="{{ url('theme://images/favicon.png') }}" />
 
          {% block stylesheets %}
+                {% do assets.addCss('theme://css/bootstrap.min.css') %}
                 {% do assets.addCss('theme://css/default.css') %}
                 {% do assets.addCss('theme://css/layout.css') %}
                 {% do assets.addCss('theme://css/media-queries.css') %}

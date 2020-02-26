@@ -5,7 +5,7 @@
     {% set show_onpage_menu = header.onpage_menu == true or header.onpage_menu is null %}
     {% macro pageLinkName(text) %}{{ text|lower|replace({' ':'_'}) }}{% endmacro %}
 
-    <ul id="nav" class="nav">
+    <ul id="nav" class="mx-auto">
         {% for page in pages.children %}
             {% if page.visible %}
                 {% set current_page = (page.active or page.activeChild) ? 'current' : '' %}
