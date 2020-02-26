@@ -1,4 +1,6 @@
-<header id="home">
+{% set header_image_file = page.header.header_image_file|defined(page.media.images|first) %}
+
+<header id="home" style="background-image: url({{header_image_file.url}})">
   {% block navigation %}
   {% include 'partials/navigation.html.twig' %}
   {% endblock %}
